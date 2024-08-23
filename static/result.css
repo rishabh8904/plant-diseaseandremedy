@@ -1,0 +1,78 @@
+/* Common CSS */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgbox {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(22, 160, 131, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.imgbox:hover .middle {
+  opacity: 1;
+}
+
+.inner {
+  text-align: center;
+}
+
+.analyze-button {
+  padding: 10px 20px;
+  background-color: #16a083;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-button:hover {
+  background-color: #117964;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 24px;
+  }
+}
